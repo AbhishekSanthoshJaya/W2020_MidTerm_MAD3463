@@ -5,6 +5,8 @@
  */
 package com.lambton;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Pritesh Patel
@@ -14,14 +16,14 @@ public class LambtonStringTools
     //1 - REVERSE STRING
     public static String reverse(String s)
     {
-        if(s != null){
-            
-            for(int i =0, j=arr.length; i <arr.length -1; i++, j--){
-
-            }
-        }
-
-        return null;
+        String[] newArray = s.split("");
+        for(int i =0, j=s.length(); i< s.length()-1; i++, j--){
+            String temp = newArray[i];
+            newArray[j] = newArray[i];
+            temp = newArray[j];
+    }
+        
+        return temp;
     }
     
     //2 - FORMAT INITIALS OF STRING
