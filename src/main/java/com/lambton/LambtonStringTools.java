@@ -16,14 +16,14 @@ public class LambtonStringTools
     //1 - REVERSE STRING
     public static String reverse(String s)
     {
-        String[] newArray = s.split("");
+      /*  String[] newArray = s.split("");
+        System.out.println(newArray);
         for(int i =0, j=s.length(); i< s.length()-1; i++, j--){
             String temp = newArray[i];
             newArray[j] = newArray[i];
             temp = newArray[j];
-    }
-        
-        return temp;
+    */}
+        return null;
     }
     
     //2 - FORMAT INITIALS OF STRING
@@ -42,6 +42,13 @@ public class LambtonStringTools
     //4 - CONVERT BINARY NUMBER TO DECIMALS
     public static int binaryToDecimal(String s) 
     {
+        char[] binNumbers = s.toCharArray();
+        int pow = 1;
+        for(int i =s.length()-1; i < 0; i++){
+            if(binNumbers[i] == '1'){
+                
+            }
+        }
        return 0;
     }
      
