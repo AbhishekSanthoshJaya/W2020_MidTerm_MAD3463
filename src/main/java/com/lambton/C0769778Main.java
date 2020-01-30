@@ -33,7 +33,7 @@ public class C0769778Main {
         System.out.println("Output : " + init);
         
         System.out.println("\n--- Binary to Decimal");
-        int decimal = LambtonStringTools.binaryToDecimal("101010");
+        double decimal = LambtonStringTools.binaryToDecimal("101010");
         System.out.println("Input  : 101010");
         System.out.println("Output : " + decimal);
         
