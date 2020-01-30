@@ -52,7 +52,7 @@ public class LambtonStringTools
                 }
             }
             }
-        } 
+        }
         return null;
     }
     
