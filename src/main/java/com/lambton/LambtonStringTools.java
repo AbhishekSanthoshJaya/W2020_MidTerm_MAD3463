@@ -64,9 +64,10 @@ public class LambtonStringTools
         }
         char[] binNumbers = s.toCharArray();
         int result = 0;
-        int power = 1;
+        int power = 0;
         for(int i =binNumbers.length-1; i > 0; i--){
-            result += (int) binNumbers[i] * Math.pow(2,power);
+            int charValue = Integer.valueOf(binNumbers[i]);
+            result += charValue * Math.pow(2,power);
             power++;
             }
         return result;
