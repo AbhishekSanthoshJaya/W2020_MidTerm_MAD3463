@@ -16,13 +16,13 @@ public class LambtonStringTools
     //1 - REVERSE STRING
     public static String reverse(String s)
     {
-     /* String[] newArray = s.split("");
-        System.out.println(newArray);
+        String[] newArray = s.split("");
+
         for(int i =0, j=s.length(); i< s.length()-1; i++, j--) {
             String temp = newArray[i];
             newArray[j] = newArray[i];
             temp = newArray[j];
-        } */
+        }
         return null;
     }
     
@@ -36,7 +36,7 @@ public class LambtonStringTools
     //3 - FIND MOST FREQUENT CHARACTER FROM STRING
     public static String mostFrequent(String s) 
     {
-        /*char[] t = s.toCharArray();
+        char[] t = s.toCharArray();
         int[] count = new int[0];
         int max = 0;
         for(int i = 0; i < s.length(); i++){
@@ -52,7 +52,7 @@ public class LambtonStringTools
                 }
             }
             }
-        } */
+        } 
         return null;
     }
     
@@ -69,7 +69,7 @@ public class LambtonStringTools
             int charValue = Integer.valueOf(binNumbers[i]);
             result += charValue * Math.pow(2,power);
             power++;
-            }
+        }
         return result;
     }
 
@@ -77,6 +77,11 @@ public class LambtonStringTools
     //5 - REPLACING SUBSTRING WITH NEW STRING IN EXISTING STRING
     public static String replaceSubString(String originalString, String findString, String newString) 
     {
+       /* char[] charOriginalString = originalString.toCharArray();
+        char[] charFindString = findString.toCharArray();
+        char[] charNewString = newString.toCharArray();
+        for(int i =0; ) */
+
         return null;
     }
 }
