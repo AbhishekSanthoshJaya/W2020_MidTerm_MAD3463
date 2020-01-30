@@ -36,27 +36,37 @@ public class LambtonStringTools
     //3 - FIND MOST FREQUENT CHARACTER FROM STRING
     public static String mostFrequent(String s) 
     {
-        char[] t = s.toCharArray();
+        /*char[] t = s.toCharArray();
         int[] count = new int[0];
+        int max = 0;
         for(int i = 0; i < s.length(); i++){
             for(int j =i+1; j < s.length()-1; j++){
                 if(t[i] == t[j]){
                     count[i]++;
                 }
-                
+            for(int k=0; k < count.length; k++){
+                for(int p =0; p< count.length; p++){
+                    if(count[p]>count[k]){
+                        max = count[p];
+                    }
+                }
             }
-        }
+            }
+        } */
         return null;
     }
     
     //4 - CONVERT BINARY NUMBER TO DECIMALS
-    public static double binaryToDecimal(String s)
+    public static int binaryToDecimal(String s)
     {
+        if(s == null){
+            return 0;
+        }
         char[] binNumbers = s.toCharArray();
-        double result = 0;
+        int result = 0;
         int power = 1;
-        for(int i =s.length()-1; i > 0; i--){
-            result = result + (binNumbers[i]* Math.pow(2,power));
+        for(int i =binNumbers.length-1; i > 0; i--){
+            result += (int) binNumbers[i] * Math.pow(2,power);
             power++;
             }
         return result;
